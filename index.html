@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Control Vehículo IoT</title>
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+    <!-- Encabezado -->
+    <h1>Control de Vehículo IoT</h1>
+    
+    <!-- Controles -->
+    <div class="controls">
+        <!-- Fila 1 -->
+        <!-- Fila 1 -->
+<div class="row">
+    <button class="btn teal" data-action="V ADE IZQ">⬅️ Vuelta Adelante Izquierda</button>
+    <button class="btn purple" data-action="ADELANTE">⬆️ Adelante</button>
+    <button class="btn teal" data-action="V ADE DER">➡️ Vuelta Adelante Derecha</button>
+</div>
+
+<!-- Fila 2 CORREGIDA -->
+<div class="row">
+    <button class="btn orange" data-action="G 360 IZQ">🔄 Giro 360° Izq</button>
+    <button class="btn yellow" data-action="G 90 IZQ">↩️ Giro 90° Izq</button>
+    <button class="btn red" data-action="DETENER">⏹️ Detener</button>
+    <button class="btn yellow" data-action="G 90 DER">↪️ Giro 90° Der</button>
+    <button class="btn orange" data-action="G 360 DER">🔁 Giro 360° Der</button>
+</div>
+
+<!-- Fila 3 -->
+<div class="row">
+    <button class="btn teal" data-action="V ATR IZQ">⬅️ Vuelta Atras Izquierda</button>
+    <button class="btn red" data-action="ATRAS">⬇️ Atras</button>
+    <button class="btn teal" data-action="V ATR DER">➡️ Vuelta Atras Derecha</button>
+</div>
+        
+        <!-- Fila 4 -->
+        <div class="row">
+            <button class="btn teal" data-action="SUBIR VEL">⬆️ Subir Velocidad</button>
+            <button class="btn red" data-action="BAJAR VEL">⬇️ Bajar Velocidad</button>
+            <button class="btn teal" data-action="GUARDAR MOV">💾 Guardar Movimiento</button>
+            <button class="btn teal" data-action="REPLICAR MOV">▶️ Reproducir Movimiento</button>
+        </div>
+    </div>
+    
+    <!-- Estado del movimiento -->
+    <div class="movement">
+        <p>Movimiento Actual:</p>
+        <div id="estadoMovimiento">INACTIVO</div>
+    </div>
+    
+    <!-- Historial -->
+    <div class="movement">
+        <p>Historial de Órdenes:</p>
+        <div id="historial">
+            <div class="text-muted fst-italic">Presione algún botón para comenzar...</div>
+        </div>
+    </div>
+    
+    <!-- Créditos -->
+    <footer>
+        Desarrollado por Francisco Perez Perez
+    </footer>
+    
+    <script src="js/main.js"></script>
+</body>
+</html>
