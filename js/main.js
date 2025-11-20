@@ -15,8 +15,8 @@ class CarControl {
     }
 
     connectWebSocket() {
-        // TU IP PÚBLICA DE AWS
-        const serverUrl = 'ws://18.206.202.121:5500';
+        // ✅ URL ACTUALIZADA CON SERVEO
+        const serverUrl = 'wss://8c3ca9608d0ebe2c66d653b532c3b154.serveo.net';
         
         console.log('Conectando a:', serverUrl);
         this.ws = new WebSocket(serverUrl);
@@ -90,24 +90,23 @@ class CarControl {
         }
 
         // MAPEO ACTUALIZADO CON LOS IDs CORRECTOS DE TU BD
- // MAPEO DE PRUEBA - VALORES EXTREMOS
-const actionMap = {
-    'ADELANTE': 1,
-    'ATRAS': 2,
-    'DETENER': 3,
-    'V ADE DER': 100,    // ← Valor único
-    'V ADE IZQ': 200,    // ← Valor único  
-    'V ATR DER': 300,    // ← Valor único
-    'V ATR IZQ': 400,    // ← Valor único
-    'G 90 DER': 500,     // ← Valor único
-    'G 90 IZQ': 600,     // ← Valor único
-    'G 360 DER': 700,    // ← Valor único
-    'G 360 IZQ': 800,    // ← Valor único
-    'SUBIR VEL': 12,
-    'BAJAR VEL': 13,
-    'GUARDAR MOV': 14,
-    'REPLICAR MOV': 15
-};
+        const actionMap = {
+            'ADELANTE': 1,
+            'ATRAS': 2,
+            'DETENER': 3,
+            'V ADE DER': 100,    // ← Valor único
+            'V ADE IZQ': 200,    // ← Valor único  
+            'V ATR DER': 300,    // ← Valor único
+            'V ATR IZQ': 400,    // ← Valor único
+            'G 90 DER': 500,     // ← Valor único
+            'G 90 IZQ': 600,     // ← Valor único
+            'G 360 DER': 700,    // ← Valor único
+            'G 360 IZQ': 800,    // ← Valor único
+            'SUBIR VEL': 12,
+            'BAJAR VEL': 13,
+            'GUARDAR MOV': 14,
+            'REPLICAR MOV': 15
+        };
 
         if (!actionMap[action]) {
             this.showNotification(`❌ Acción no válida: ${action}`, 'error');
