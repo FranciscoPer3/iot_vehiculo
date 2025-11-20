@@ -16,7 +16,7 @@ class CarControl {
 
     connectWebSocket() {
         // ✅ URL ACTUALIZADA CON SERVEO
-        const serverUrl = 'wss://8c3ca9608d0ebe2c66d653b532c3b154.serveo.net';
+        const serverUrl = 'wss://salty-apples-accept.loca.lt';
         
         console.log('Conectando a:', serverUrl);
         this.ws = new WebSocket(serverUrl);
