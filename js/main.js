@@ -16,7 +16,7 @@ class CarControl {
 
     connectWebSocket() {
         // ✅ URL ACTUALIZADA CON SERVEO
-        const serverUrl = 'wss://fluffy-emus-jam.loca.lt';
+        const serverUrl = 'wss://crazy-spoons-sing.loca.lt';
         
         
         console.log('Conectando a:', serverUrl);
